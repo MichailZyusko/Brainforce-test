@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Geometria";
-  src: url("./src/Fonts/Geometria.ttf");
+  src: url("../src/Fonts/Geometria.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("./src/Fonts/Geometria.ttf");
+  src: url("../src/Fonts/Geometria.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("./src/Fonts/Geometria-Bold.ttf");
+  src: url("../src/Fonts/Geometria-Bold.ttf");
   font-style: normal;
   font-weight: bold;
 }
@@ -164,13 +164,16 @@ header div {
   z-index: 1;
   max-width: 47vw;
   width: 47vw;
-  margin-bottom: 5vw;
+  margin-bottom: 5px;
 
-  align-items: center;
-  margin-right: 20px;
+  /* align-items: center; */
 
   background: #f4f4f4;
   border-radius: 8px;
+}
+
+#bigBuble:last-child {
+  margin-bottom: 65px;
 }
 
 #chat {
