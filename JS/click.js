@@ -1,16 +1,16 @@
-export function click() {
-  let children = this.previousElementSibling.children;
-  console.log(this.previousElementSibling.children);
+export function click(target) {
+  let children = target.previousElementSibling.children;
+  console.log(target.previousElementSibling.children);
 
   if (children[1].style.display !== "none") {
     for (let i = 1; i < children.length; i++) {
       children[i].style.display = "none";
-      this.src = "../src/more.png";
+      target.src = "../src/more.png";
     }
   } else {
     for (let i = 1; i < children.length; i++) {
       children[i].style.display = "initial";
-      this.src = "../src/close.png";
+      target.src = "../src/close.png";
     }
   }
 }

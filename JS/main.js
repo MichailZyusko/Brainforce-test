@@ -1,16 +1,40 @@
 import { click } from "./click.js";
 import { consultant } from "./consultation.js";
+import { nameValidation, phoneValidation } from "./validation.js";
 
-picture_1.addEventListener("click", click);
-picture_2.addEventListener("click", click);
-picture_3.addEventListener("click", click);
-picture_4.addEventListener("click", click);
-picture_5.addEventListener("click", click);
-picture_6.addEventListener("click", click);
-picture_7.addEventListener("click", click);
-picture_8.addEventListener("click", click);
-picture_9.addEventListener("click", click);
-picture_10.addEventListener("click", click);
-picture_11.addEventListener("click", click);
-picture_12.addEventListener("click", click);
+const mask = [];
+
+function phoneOnFocus() {
+  let phoneInput = document.getElementById("phoneInput");
+  if (phoneInput.value === "") {
+    phoneInput.value = "+375(XX)XX-XX-XX";
+  }
+}
+
+function phoneOnKeyDown(event) {
+  // let phoneInput = document.getElementById("phoneInput");
+  // if (event.code.includes("Digit")) {
+  //   // если это цифра
+  // }
+}
+
+function phoneOnKeyUp(event) {
+  // this.value = this.value.replace(/[^\d]/g, "");
+  // let phoneInput = document.getElementById("phoneInput");
+  // if (!event.code.includes("Digit")) {
+  //   phoneInput.value = phoneInput.value.slice(0, -1);
+  // }
+}
+
+document.addEventListener("click", function (e) {
+  const target = e.path[0];
+  if (target.className !== "picture") return;
+  click(target);
+});
+
 consultation.addEventListener("click", consultant);
+nameInput.addEventListener("input", nameValidation);
+phoneInput.addEventListener("input", phoneValidation);
+phoneInput.addEventListener("focus", phoneOnFocus);
+phoneInput.addEventListener("keydown", phoneOnKeyDown);
+phoneInput.addEventListener("keyup", phoneOnKeyUp);
