@@ -8,6 +8,8 @@ export function nameValidation() {
   captionForName.style.visibility = "visible";
 
   if (string.length > 0) {
+    nameInput.style.borderWidth = 5;
+    nameInput.style.borderColor = "green";
     if (string.length <= MAX_LENGTH) {
       captionForName.innerHTML = "Осталось " + (MAX_LENGTH - string.length);
       captionForName.style.color = "green";

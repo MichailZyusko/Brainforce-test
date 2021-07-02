@@ -20,7 +20,6 @@
 header {
   display: flex;
   flex: 1;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   min-height: 100px;
@@ -28,7 +27,6 @@ header {
 
 header div {
   font-family: Geometria;
-  font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.02em;
   color: #333333;
@@ -47,11 +45,8 @@ header div {
 #consultation {
   z-index: 1;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
 
-  text-align: center;
   letter-spacing: 0.02em;
 
   padding: 12px 20px 12px 20px;
@@ -63,17 +58,14 @@ header div {
 
 #main {
   z-index: 1;
-  display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 #common {
   z-index: 1;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex: 1;
+
   margin-left: 2vw;
   margin-right: 2vw;
 }
@@ -81,8 +73,6 @@ header div {
 #general {
   z-index: 1;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
@@ -93,7 +83,6 @@ header div {
 #mostPopularQuestion {
   z-index: 1;
   font-family: Geometria;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   color: #333333;
@@ -104,18 +93,13 @@ header div {
   z-index: 1;
   width: 447px;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   margin-bottom: 3vw;
-  font-size: 16px;
   color: #828282;
 }
 
 #generalText {
   z-index: 1;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 #productCertification {
@@ -137,43 +121,18 @@ header div {
   margin-left: 2vw;
 }
 
-#buble {
-  z-index: 1;
-
-  display: flex;
-
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 76px;
-  max-width: 47vw;
-  width: 47vw;
-
-  background: #f4f4f4;
-  border-radius: 8px;
-  margin-bottom: 5px;
-  margin-right: 20px;
-}
-
 #bigBuble {
-  display: flex;
-  flex-direction: column;
-
   z-index: 1;
   max-width: 47vw;
   width: 47vw;
   margin-bottom: 5px;
-
-  /* align-items: center; */
-
+  margin-right: 2vw;
   background: #f4f4f4;
   border-radius: 8px;
 }
 
 #bigBuble:last-child {
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 }
 
 #chat {
@@ -204,8 +163,7 @@ header div {
 #aboutUs {
   z-index: 1;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
   background: #333333;
   padding: 5vw 2vw 5vw 2vw;
 }
@@ -221,9 +179,7 @@ header div {
 #H1 {
   z-index: 1;
   max-width: 39vw;
-  height: 76px;
   font-family: Geometria;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   color: #e0e0e0;
@@ -232,16 +188,12 @@ header div {
 #map {
   display: flex;
   flex: 1;
-  border-radius: 12px;
   z-index: 1;
 }
 
 .contacts {
   z-index: 1;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
   color: white;
   margin-bottom: 20px;
 }
@@ -249,8 +201,6 @@ header div {
 .aboutUsText {
   z-index: 1;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   color: #e0e0e0;
 }
@@ -258,7 +208,6 @@ header div {
 footer {
   z-index: 1;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 40px;
 }
@@ -268,9 +217,6 @@ footer span {
   margin-top: 10px;
   margin-bottom: 9px;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   color: #333333;
 }
 
@@ -280,135 +226,73 @@ footer span {
 
 #backgroundModal {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: space-around;
-
   background-image: url(../src/Rectangle\ 210.png);
-  border-radius: 8px;
   width: 447px;
   height: 359px;
   z-index: 100;
 }
 
 #caption {
-  /* position: absolute;
   width: 395px;
   height: 50px;
-  left: 26px;
-  top: 30px; */
-
-  width: 395px;
-  height: 50px;
-
   margin-left: 26px;
-
   font-family: Geometria;
-  font-style: normal;
-  font-weight: 500;
   font-size: 20px;
-
   color: #333333;
   z-index: 101;
 }
 
 #nameInput {
-  /* position: absolute;
-  width: 330px;
-  height: 43px;
-  left: 26px;
-  top: 120px; */
-
   margin-left: 26px;
-
   background: #f4f4f4;
   border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 8px;
-
   padding: 12px 0px 12px 20px;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   color: #828282;
-
   z-index: 101;
 }
 
 #labelforName {
   font-family: Geometria;
-  font-style: normal;
-  font-weight: 500;
   font-size: 13px;
   visibility: hidden;
 }
 
 #phoneInput {
-  /* position: absolute;
-  width: 330px;
-  height: 43px;
-  left: 26px;
-  top: 193px; */
-  /* width: 330px;
-  height: 43px; */
-
   margin-left: 26px;
   background: #f4f4f4;
   border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 8px;
-
   padding: 12px 0px 12px 20px;
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   color: #828282;
-
   z-index: 101;
 }
 
 #labelforPhone {
   font-family: Geometria;
-  font-style: normal;
-  font-weight: 500;
   font-size: 13px;
   visibility: hidden;
 }
 
 #button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 12px 20px;
-
   margin-left: 26px;
-
   font-family: Geometria;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
-
   width: 223px;
-  height: 43px;
-
-  text-align: right;
   letter-spacing: 0.02em;
-
   color: #333333;
-
-  /* position: absolute;
-  width: 223px;
-  height: 43px;
-  left: 26px;
-  top: 276px; */
-
   border-width: 0px;
-
   background: #ffdb2d;
   border-radius: 8px;
-
   z-index: 101;
 }
 
@@ -423,14 +307,10 @@ footer span {
   -webkit-overflow-scrolling: touch;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center; /* см. ниже */
+  justify-content: center;
   align-items: center;
   z-index: 99;
-
   visibility: hidden;
-
-  /* Чтобы окно не прилипало к границе
-    браузера установим отступы */
   padding: 30px 0;
 }
 
@@ -445,23 +325,12 @@ footer span {
   align-items: center;
   justify-content: center;
 }
-/* .hystmodal__window {
-  background: #fff;
-  width: 600px;
-  max-width: 100%;
-  overflow: visible;
-  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  transform: scale(0.9);
-  opacity: 0;
-} */
 
 .hystmodal__window {
   border-radius: 8px;
-
   margin: 50px 0;
   flex-shrink: 0;
   flex-grow: 0;
-
   overflow: visible;
   transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
   transform: scale(0.9);
@@ -471,10 +340,12 @@ footer span {
 .hystmodal--active {
   visibility: visible;
 }
+
 .hystmodal--active .hystmodal__window {
   transform: scale(1);
   opacity: 1;
 }
+
 .hystmodal__shadow {
   position: fixed;
   border: none;
@@ -493,7 +364,7 @@ footer span {
 
   visibility: hidden;
 }
-/* активная подложка */
+
 .hystmodal__shadow--show {
   pointer-events: auto;
   opacity: 0.6;
@@ -502,4 +373,29 @@ footer span {
 #phoneInput:invalid,
 #nameInput:invalid {
   border: red solid 3px;
+}
+
+#pop_up {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 200;
+  padding: 30px 0;
+}
+
+#thanks {
+  justify-content: center;
+  align-items: center;
+  width: 1147px;
+  height: 333px;
+  z-index: 120;
 }

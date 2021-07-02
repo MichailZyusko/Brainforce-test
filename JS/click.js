@@ -1,6 +1,5 @@
 export function click(target) {
   let children = target.previousElementSibling.children;
-  console.log(target.previousElementSibling.children);
 
   if (children[1].style.display !== "none") {
     for (let i = 1; i < children.length; i++) {
