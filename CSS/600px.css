@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px) {
+  .block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  #yellowRectangle {
+    display: none;
+  }
+
+  header div {
+    margin-bottom: 10px;
+  }
+}

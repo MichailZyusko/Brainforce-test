@@ -45,9 +45,9 @@ button.addEventListener("click", function () {
   document.getElementById("pop_up").style.display = "flex";
 
   setTimeout(function () {
-    // alert("gg");
-    document.getElementById("pop_up").style.display = "none";
-    document.getElementsByTagName("html")[0].style.overflow = "scroll";
+    alert("gg");
+    // document.getElementById("pop_up").style.display = "none";
+    // document.getElementsByTagName("html")[0].style.overflow = "scroll";
   }, 30000);
 });
 // phoneInput.addEventListener("keydown", phoneOnKeyDown);

@@ -6,33 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Demo Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./CSS/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/1000px.css" />
+    <link rel="stylesheet" href="./CSS/750px.css" />
+    <link rel="stylesheet" href="./CSS/600px.css" />
   </head>
   <body style="margin: 0px">
     <header>
-      <img src="./src/Vector.png" />
-      <div>
+      <img id="Icon">
+      <span>
         <div>+375 11 555-55-55</div>
         <div>+375 11 555-55-55</div>
-      </div>
+    </span>
       <div>Услуги</div>
       <div>О компании</div>
       <div>Документация</div>
-      <div>
+      <span>
         <div id="yellowRectangle"></div>
         <div style="color: #828282">Вопросы</div>
-      </div>
+      </span>
       <div>Контакты</div>
       <div style="border-bottom: 1px dashed #333333">Поиск</div>
       <button id="consultation">Консультация</button>
     </header>
     <main id="main">
       <div id="general">Главная</div>
-      <div
-        style="background: url(./src/Rectangle\ 173.png) right bottom no-repeat"
-      >
+      <div id="BackgroundPicture">
         <div id="common">
-          <div style="flex-direction: column">
+          <div style="flex-direction: column; flex: 5;">
             <div>
               <div id="mostPopularQuestion">Самые частые вопросы</div>
               <div id="qoute">
@@ -42,13 +43,13 @@
             </div>
             <div style="display: flex; flex-direction: column">
               <div id="generalText">
-                <div style="display: flex">
-                  <div style="margin-right: 2vw">
+                <div class="block" >
+                  <div style="margin-right: 20px;">
                     <div id="productCertification">Сертификация продукции</div>
                     <div id="line"></div>
                   </div>
 
-                  <div style="flex-direction: column">
+                  <div style="flex-direction: column; width: 100%; margin-right: 20px;">
                     <div id="bigBuble">
                       <div
                         style="display: flex; justify-content: space-between"
@@ -317,13 +318,13 @@
                     </div>
                   </div>
                 </div>
-                <div style="display: flex">
-                  <div style="margin-right: 2vw">
+               <div class="block" >
+                  <div style="margin-right: 20px;">
                     <div id="productCertification">Сертификация продукции</div>
                     <div id="line"></div>
                   </div>
 
-                  <div style="flex-direction: column">
+                  <div style="flex-direction: column; width: 100%; margin-right: 20px;">
                     <div id="bigBuble">
                       <div
                         style="display: flex; justify-content: space-between"
@@ -592,13 +593,13 @@
                     </div>
                   </div>
                 </div>
-                <div style="display: flex">
-                  <div style="margin-right: 2vw">
+               <div class="block" >
+                  <div style="margin-right: 20px;">
                     <div id="productCertification">Сертификация продукции</div>
                     <div id="line"></div>
                   </div>
 
-                  <div style="flex-direction: column">
+                  <div style="flex-direction: column; width: 100%; margin-right: 20px;">
                     <div id="bigBuble">
                       <div
                         style="display: flex; justify-content: space-between"
@@ -931,10 +932,7 @@
           </div>
         </div>
         <div id="map">
-          <img
-            src="./src/Map 1X.png"
-            style="width: 100%; height: 100%; object-fit: cover"
-          />
+          <img id="mapPicture"/>
         </div>
       </div>
     </main>

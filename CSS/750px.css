@@ -1,0 +1,10 @@
+@media screen and (max-width: 750px) {
+  #BackgroundPicture {
+    background: url(../src/BackgroundPicture/Background\ picture\ 0.5x.png)
+      right bottom no-repeat;
+  }
+
+  #Icon {
+    content: url(../src/Icon/Icon\ 0.5x.png);
+  }
+}
