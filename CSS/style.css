@@ -24,6 +24,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   min-height: 100px;
+  margin-top: 10px;
 }
 
 header div {
@@ -152,6 +153,33 @@ header div {
 
 #bigBuble:last-child {
   margin-bottom: 70px;
+}
+
+.textBlock {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: Geometria;
+  color: #333333;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-top: 26px;
+}
+
+.text {
+  font-family: Geometria;
+  color: #333333;
+  margin-left: 10px;
+}
+
+.picture {
+  margin-right: 20px;
+  margin-left: 25px;
+  margin-top: 26px;
+  align-self: flex-start;
 }
 
 #chat {
@@ -435,4 +463,11 @@ footer span {
 
 #consultation:hover {
   background-color: #ffdb2d;
+}
+
+.Input {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 43px;
 }
