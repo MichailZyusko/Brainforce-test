@@ -8,7 +8,6 @@ export function nameValidation() {
   captionForName.style.visibility = "visible";
 
   if (string.length > 0) {
-    nameInput.style.borderWidth = 5;
     nameInput.style.borderColor = "green";
     if (string.length <= MAX_LENGTH) {
       captionForName.innerHTML = "Осталось " + (MAX_LENGTH - string.length);
@@ -18,7 +17,6 @@ export function nameValidation() {
       nameInput.value = nameInput.value.slice(0, -1);
     }
   } else {
-    nameInput.style.borderWidth = 5;
     nameInput.style.borderColor = "red";
 
     captionForName.style.color = "red";
@@ -34,21 +32,16 @@ export function phoneValidation() {
   captionForPhone.style.visibility = "visible";
 
   if (string.length == 0) {
-    phoneInput.style.borderWidth = 10;
     phoneInput.style.borderColor = "red";
 
     captionForPhone.style.color = "red";
     captionForPhone.innerHTML = "Обязательное поле";
-  }
-
-  if (phoneInput.validity.valid) {
-    phoneInput.style.borderWidth = 10;
+  } else if (phoneInput.validity.valid) {
     phoneInput.style.borderColor = "green";
 
     captionForPhone.style.color = "green";
     captionForPhone.innerHTML = "Приемлимо";
   } else {
-    phoneInput.style.borderWidth = 10;
     phoneInput.style.borderColor = "red";
 
     captionForPhone.style.color = "red";

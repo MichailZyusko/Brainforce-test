@@ -33,7 +33,7 @@
       <div id="general">Главная</div>
       <div id="BackgroundPicture">
         <div id="common">
-          <div style="flex-direction: column; flex: 5;">
+          <div style="flex-direction: column; flex: 2;">
             <div>
               <div id="mostPopularQuestion">Самые частые вопросы</div>
               <div id="qoute">
@@ -910,19 +910,18 @@
 
           <div
             style="
-              /* flex-direction: row; */
               display: flex;
               justify-content: space-between;
             "
           >
-            <div style="flex-direction: column; display: flex">
+            <div style="flex-direction: column; display: flex; flex: 1;">
               <span class="contacts">Услуги</span>
               <span class="contacts">О компании</span>
               <span class="contacts">Блог</span>
               <span class="contacts">Контакты</span>
             </div>
 
-            <div style="flex-direction: column; display: flex">
+            <div style="flex-direction: column; display: flex; flex: 1;">
               <span class="contacts">info@brainforce.by</span>
               <span class="contacts"
                 >Беларусь, Минск, ул. М.Богдановича, 155</span
@@ -945,7 +944,6 @@
     <div class="hystmodal" id="myModal" aria-hidden="true">
       <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <form action="">
             <div id="backgroundModal">
               <div id="caption">
                 Заполните форму и закажите бесплатную консультацию
@@ -962,7 +960,6 @@
                   type="text"
                   placeholder="Имя"
                   id="nameInput"
-                  pattern="[A-Za-zА-Яа-яЁё]{,5}"
                 />
                 <span
                   style="display: flex; justify-content: flex-end; z-index: 101"
@@ -992,7 +989,6 @@
               </div>
               <button id="button">Заказать консультацию</button>
             </div>
-          </form>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@
   }
 
   #chat {
-    width: 60vw;
+    width: 80vw;
     align-self: center;
     flex: none;
   }
@@ -35,9 +35,5 @@
 
   #H1 {
     max-width: 100%;
-  }
-
-  #Icon {
-    content: url(../src/Icon/Icon\ 0.75x.png);
   }
 }

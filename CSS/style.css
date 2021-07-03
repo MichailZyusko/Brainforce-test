@@ -132,7 +132,6 @@ header div {
 
 #line {
   width: 193px;
-  /* width: 13vw; */
   border-bottom: 2px solid #ffdb2d;
   margin-top: 2px;
   margin-left: 2vw;
@@ -142,12 +141,13 @@ header div {
 #bigBuble {
   z-index: 1;
   width: 100%;
-  /* max-width: 47vw; */
-  /* width: 47vw; */
   margin-bottom: 5px;
   margin-right: 2vw;
   background: #f4f4f4;
   border-radius: 8px;
+
+  transition-property: display;
+  transition-duration: 3s;
 }
 
 #bigBuble:last-child {
@@ -158,11 +158,10 @@ header div {
   z-index: 1;
   background: #e0e0e0;
   border-radius: 8px;
-  /* max-width: 32vw; */
   margin-bottom: 70px;
   height: 764px;
   display: flex;
-  flex: 2;
+  flex: 1;
 }
 
 #chatCaption {
@@ -210,8 +209,6 @@ header div {
   z-index: 1;
   border: 1px solid #828282;
   border-radius: 8px;
-  /* min-width: 525px; */
-  /* min-height: 425px; */
 }
 
 #mapPicture {
@@ -406,6 +403,11 @@ footer span {
   border: red solid 3px;
 }
 
+#phoneInput:valid,
+#nameInput:valid {
+  border: green solid 3px;
+}
+
 #pop_up {
   position: fixed;
   top: 0;
@@ -429,4 +431,8 @@ footer span {
   width: 1147px;
   height: 333px;
   z-index: 120;
+}
+
+#consultation:hover {
+  background-color: #ffdb2d;
 }
